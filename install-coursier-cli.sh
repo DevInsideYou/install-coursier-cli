@@ -14,5 +14,9 @@ echo
 
 coursier --help
 
+echo
+
+echo '"coursier" is now on the path'
+
 # remove yourself
 rm $0
