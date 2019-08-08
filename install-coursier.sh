@@ -9,6 +9,9 @@ fi
 # install coursier
 sudo curl -L $URL -o /usr/local/bin/coursier
 sudo chmod +x /usr/local/bin/coursier
+
+echo
+
 coursier --help
 
 # remove yourself
