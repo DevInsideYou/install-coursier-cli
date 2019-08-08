@@ -11,3 +11,6 @@ sudo chmod +x install-coursier-cli.sh && ./install-coursier-cli.sh
 wget -q https://raw.githubusercontent.com/DevInsideYou/install-coursier-cli/master/install-coursier-cli.sh
 sudo chmod +x install-coursier-cli.sh && ./install-coursier-cli.sh 2.0.0-RC3-2
 ```
+
+### Runtime Dependencies:
+* [Java](https://github.com/DevInsideYou/install-java)
