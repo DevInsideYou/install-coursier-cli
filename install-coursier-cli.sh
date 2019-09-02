@@ -6,9 +6,14 @@ else
     URL="https://github.com/coursier/coursier/releases/download/v$1/coursier"
 fi
 
+TARGET=/usr/local/bin/coursier
+
+# install curl
+sudo apt install -yqqq curl
+
 # install coursier
-sudo curl -L $URL -o /usr/local/bin/coursier
-sudo chmod +x /usr/local/bin/coursier
+sudo curl -L $URL -o $TARGET
+sudo chmod +x $TARGET
 
 echo
 
