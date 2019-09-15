@@ -5,7 +5,7 @@ wget -q https://script.install.devinsideyou.com/coursier-cli
 sudo chmod +x coursier-cli && ./coursier-cli
 ```
 
-# Installs [Coursier CLI](https://get-coursier.io/) on [Ubuntu](https://www.ubuntu.com/) with version set manually to [2.0.0-RC3-3](https://get-coursier.io/versions)
+# Speicfies [version](https://get-coursier.io/versions) (optional)
 
 ```bash
 wget -q https://script.install.devinsideyou.com/coursier-cli
