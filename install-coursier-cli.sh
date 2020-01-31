@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# remove yourself
+rm $0
+
 if [ "$1" == "" ]; then
     URL="https://git.io/coursier-cli"
 else
@@ -13,15 +16,11 @@ sudo apt install -yqqq curl
 
 # install coursier
 sudo curl -L $URL -o $TARGET
+
 sudo chmod +x $TARGET
 
 echo
-
 coursier --help
 
 echo
-
 echo '"coursier" is now on the path'
-
-# remove yourself
-rm $0
