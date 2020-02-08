@@ -9,7 +9,7 @@ sudo chmod +x coursier-cli && ./coursier-cli
 
 ```bash
 wget -q https://script.install.devinsideyou.com/coursier-cli
-sudo chmod +x coursier-cli && ./coursier-cli 2.0.0-RC5-6
+sudo chmod +x coursier-cli && ./coursier-cli 2.0.0-RC6-2
 ```
 
 ### Runtime Dependencies:
