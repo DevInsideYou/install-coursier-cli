@@ -24,3 +24,6 @@ coursier --help
 
 echo
 echo '"coursier" is now on the path'
+
+echo
+echo "You might be interested aliasing coursier as cs by putting alias cs='coursier' in your ~/.bash_aliases or similar"
