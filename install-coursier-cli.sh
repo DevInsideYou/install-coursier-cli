@@ -3,27 +3,20 @@
 # remove yourself
 rm $0
 
-if [ "$1" == "" ]; then
-    URL="https://git.io/coursier-cli"
-else
-    URL="https://github.com/coursier/coursier/releases/download/v$1/coursier"
+# install curl if necessary
+if [[ -z $(dpkg -l | grep curl) ]] ; then
+  echo 'Installing curl...'
+  sudo apt install -yqqq curl
 fi
 
-TARGET=/usr/local/bin/coursier
+# dowbload temporary coursier native-image to bootstrap the installation
+curl -fLo cs https://git.io/coursier-cli-"$(uname | tr LD ld)"
 
-# install curl
-sudo apt install -yqqq curl
+# make it executable
+chmod +x cs
 
-# install coursier
-sudo curl -L $URL -o $TARGET
+# install cs and coursier
+./cs install cs coursier
 
-sudo chmod +x $TARGET
-
-echo
-coursier --help
-
-echo
-echo '"coursier" is now on the path'
-
-echo
-echo "You might be interested aliasing coursier as cs by putting alias cs='coursier' in your ~/.bash_aliases or similar"
+# remove the temporary native-image
+rm cs

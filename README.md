@@ -2,15 +2,5 @@
 
 ```bash
 wget -q https://script.install.devinsideyou.com/coursier-cli
-sudo chmod +x coursier-cli && ./coursier-cli
+chmod +x coursier-cli && ./coursier-cli
 ```
-
-# Speicfies [version](https://get-coursier.io/versions) (optional)
-
-```bash
-wget -q https://script.install.devinsideyou.com/coursier-cli
-sudo chmod +x coursier-cli && ./coursier-cli 2.0.0-RC6-2
-```
-
-### Runtime Dependencies:
-* [Java](https://github.com/DevInsideYou/install-java)
